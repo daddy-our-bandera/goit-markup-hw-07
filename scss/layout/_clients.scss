@@ -17,18 +17,18 @@
 
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  &:hover,
+  &:focus {
+    fill: var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+  }
+  &:hover .clients__icon,
+  &:focus .clients__icon {
+    fill: var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+  }
 }
 .clients__icon {
   fill: #afb1b8;
   transition: fill 250ms var(--cubic);
-}
-.clients__link:hover,
-.clients__link:focus {
-  fill: var(--accent-txt-cl);
-  border-color: var(--accent-txt-cl);
-}
-.clients__link:hover .clients__icon,
-.clients__link:focus .clients__icon {
-  fill: var(--accent-txt-cl);
-  border-color: var(--accent-txt-cl);
 }
